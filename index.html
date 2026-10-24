@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"> 
+    </script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>🪷cutie patootie club checker❀˖°</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{background-image: url(polkadot.png);
+    background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+    </style>
+</head>
+<body>
+
+    <style>
+
+        .logo{
+            filter: drop-shadow(0px 0px 12px #f0e7ec);
+            width: 120px;
+            margin-top: 20px ;
+        }
+
+        @font-face {
+            font-family: 'Sprinkle';
+            src: url('Sprinkle-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .title{
+            font-family: Sprinkle;
+            font-size: 30px;
+            margin-top: 10px;
+            text-shadow: 0px 0px 8px #efe6eb;
+            color: #655e62;
+        }
+
+        .subtitle{
+            font-family: Sprinkle;
+            font-size: 20pxpx;
+            margin-top: 3px;
+            text-shadow: 0px 0px 8px #efe6eb;
+            color: #655e62;
+        }
+
+        .mainbox{
+            background:	#ffbad6 ;
+                border-radius: 20px;
+                margin: 20px;
+                text-align:center;
+                padding: 40px;
+                box-shadow: 0px 0px 12px rgba(240,231,236, 1);
+                width: 420px;
+                margin-top: 30px;
+        }
+
+        .enterbox{
+            font-family: Sprinkle;
+            color: #655e62;
+            font-size: 15px;
+            border-radius: 20px;
+            border: solid #a9e6e7;
+            margin-bottom: 5px;
+            box-shadow: 0px 0px 12px rgba(240,231,236, 1);
+
+
+            
+        }
+
+        .submitbut {
+            font-family: Sprinkle;
+            color: #655e62;
+            font-size: 15px;
+            margin-top: 12px;
+            background-color: #a9e6e7;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 12px rgba(240,231,236, 1);
+        }
+
+        .submitbut:hover {
+            filter: drop-shadow(0px 0px 18px #efe6eb);
+        }
+
+        .results{
+            font-family: Sprinkle;
+            color: #655e62;
+            text-shadow: 0px 0px 8px #efe6eb;
+            color: #655e62;
+            margin-top: 15px;
+        }
+
+    </style>
+
+    <center>
+    <div class="container-fluid mainbox">
+    <header>
+        <div class="reactor"></div>
+        <img src="logo.png" class="logo">
+        <h1 class="title">♡ cutie patootie club🪷</h1>
+        <p class="subtitle">member verification system !</p>
+    </header>
+    
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="First name" class="enterbox"><br>
+            <input type="text" id="last_name" placeholder="Last name" class="enterbox"><br>
+            <input type="button" py-click="candidate_checker" value="Submit" class="submitbut">
+        </form>
+        <div id="result" class="results"></div>
+    </main>
+    </div>
+    </center>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
